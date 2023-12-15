@@ -113,6 +113,9 @@ main {
   .navbar {
     display: none;
   }
+  main {
+    margin-top: 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
