@@ -147,12 +147,24 @@ main .banner img {
     margin-right: auto;
     height: 350px;
   }
+  main article .left {
+    width: 500px;
+  }
+  main article .right {
+    width: 500px;
+  }
 }
 @media (max-width: 550px) {
   .dropdown_menu {
     width: 98%;
     top: auto;
     left: 1rem;
+  }
+  main article .left {
+    width: 300px;
+  }
+  main article .right {
+    width: 300px;
   }
 }
 

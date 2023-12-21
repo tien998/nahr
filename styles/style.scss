@@ -124,7 +124,6 @@ main {
 
         p {
             margin: 1rem;
-            // width: 550px;
         }
     }
 
@@ -167,7 +166,20 @@ main {
                 height: 350px;
             }
         }
+
+        article {
+
+            .left {
+                width: 500px;
+            }
+
+            .right {
+                width: 500px;
+            }
+        }
+
     }
+
 }
 
 @media (max-width:550px) {
@@ -175,5 +187,17 @@ main {
         width: 98%;
         top: auto;
         left: 1rem;
+    }
+
+    main {
+        article {
+            .left {
+                width: 300px;
+            }
+
+            .right {
+                width: 300px;
+            }
+        }
     }
 }
