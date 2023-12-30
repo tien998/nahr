@@ -32,6 +32,12 @@ header a {
   position: relative;
 }
 
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: right;
+}
+
 .navbar {
   display: flex;
   height: auto;
@@ -98,31 +104,37 @@ main {
   margin-top: 8rem;
   width: 100%;
 }
-main article {
-  line-height: 1.5;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-main article .left {
-  float: left;
-  width: 700px;
-}
-main article .right {
-  float: right;
-  width: 700px;
-}
-main article p {
-  margin: 1rem;
-}
 main .banner {
   width: 100%;
   background-color: rgba(7, 7, 7, 0.7);
 }
 main .banner img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 650px;
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+}
+main article {
+  line-height: 1.5;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+main article .left {
+  text-align: left;
+}
+main article .left p {
+  display: inline-block;
+  width: 600px;
+}
+main article .right {
+  text-align: right;
+}
+main article .right p {
+  display: inline-block;
+  width: 600px;
+}
+main article p {
+  margin: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -147,10 +159,10 @@ main .banner img {
     margin-right: auto;
     height: 350px;
   }
-  main article .left {
+  main article .left p {
     width: 500px;
   }
-  main article .right {
+  main article .right p {
     width: 500px;
   }
 }
@@ -160,10 +172,10 @@ main .banner img {
     top: auto;
     left: 1rem;
   }
-  main article .left {
+  main article .left p {
     width: 300px;
   }
-  main article .right {
+  main article .right p {
     width: 300px;
   }
 }
