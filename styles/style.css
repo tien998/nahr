@@ -16,13 +16,13 @@ header {
   top: 0;
 }
 header a {
-  color: rgb(165, 3, 3);
+  color: #a50303;
   text-decoration: none;
 }
 
 .head_banner {
   height: 5rem;
-  background-color: rgb(192, 56, 56);
+  background-color: rgba(241, 53, 53, 0.8156862745);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,12 +30,21 @@ header a {
   color: aliceblue;
   font-size: 2rem;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .logo {
   font-size: 1.25rem;
   font-weight: bold;
   text-align: right;
+}
+.logo span {
+  display: inline-block;
+}
+.logo .brvt {
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: #880909;
 }
 
 .navbar {
@@ -64,7 +73,7 @@ li a {
   width: 100%;
 }
 li:hover {
-  background-color: rgb(192, 56, 56);
+  background-color: #c03838;
 }
 li:hover a {
   color: aliceblue;
@@ -101,7 +110,6 @@ li:hover a {
 }
 
 main {
-  margin-top: 8rem;
   width: 100%;
 }
 main .banner {
@@ -117,7 +125,6 @@ main article {
   line-height: 1.5;
   max-width: 1300px;
   margin: 0 auto;
-  padding-top: 3rem;
 }
 main article .left {
   text-align: left;
@@ -134,7 +141,67 @@ main article .right p {
   width: 600px;
 }
 main article p {
-  margin: 1rem;
+  margin: 2rem 1rem;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.col-50 {
+  flex-basis: 50%;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.introduce h1, .introduce h2, .introduce h3, .introduce h4, .introduce h5 {
+  color: #c03838;
+}
+.introduce h2 {
+  display: inline;
+  vertical-align: top;
+  font-size: 1.25rem;
+}
+.introduce h3 {
+  font-size: 2rem;
+  text-align: right;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: 1%;
+  border: 10px solid yellow;
+}
+
+.img-1 {
+  background-image: url(../assets/imgs/be\ gau.jpeg);
+}
+
+.hr {
+  height: 1px;
+  background-color: #a50303;
+  margin-left: 1rem;
+}
+
+.hr-10 {
+  width: 10%;
+  margin-left: 1rem;
+}
+
+.hr-15 {
+  width: 15%;
+  margin-left: 1rem;
+}
+
+.mg-top-4 {
+  margin-top: 4rem;
 }
 
 @media (max-width: 992px) {
