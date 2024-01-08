@@ -22,6 +22,24 @@ header {
     }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 1rem;
+}
+
+.m1 {
+    margin: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
 .head_banner {
     height: 5rem;
     background-color: #f13535d0;
@@ -39,9 +57,11 @@ header {
     font-size: 1.25rem;
     font-weight: bold;
     text-align: right;
+
     span {
         display: inline-block;
     }
+
     .brvt {
         font-size: 3rem;
         margin-left: 1rem;
@@ -114,7 +134,7 @@ li {
 
 #toggle_btn {
     display: none;
-    margin-right: 2rem;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -136,6 +156,7 @@ main {
         line-height: 1.5;
         max-width: 1300px;
         margin: 0 auto;
+
         .left {
             text-align: left;
 
@@ -154,46 +175,88 @@ main {
             }
         }
 
-        p {
-            margin: 2rem 1rem;
-        }
+
     }
 }
+
 
 .row {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.nowrap-550 {
+    flex-wrap: nowrap;
+}
+
+.gap1 {
+    gap: 1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .center {
+//     margin: auto auto;
+//     text-align: center;
+// }
 
 .col-50 {
     flex-basis: 50%;
 }
 
+.col-25 {
+    flex-basis: 25%;
+}
 
+.col-70 {
+    flex-basis: 70%;
+}
 
 .container {
     padding: 1rem;
 }
+
 .introduce {
-    h1,h2,h3,h4,h5 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         color: #c03838;
+        margin: .75rem;
     }
+
     h2 {
         display: inline;
         vertical-align: top;
         font-size: 1.25rem;
     }
+
     h3 {
         font-size: 2rem;
         text-align: right;
     }
+
+    p {
+        line-height: 1rem;
+        margin: .75rem;
+    }
 }
 
 
-
 .circle {
-    width: 150px;
-    height: 150px;
+    height: 180px;
+    width: 180px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -210,16 +273,23 @@ main {
     background-color: #a50303;
     margin-left: 1rem;
 }
+
 .hr-10 {
     width: 10%;
     margin-left: 1rem;
 }
+
 .hr-15 {
     width: 15%;
     margin-left: 1rem;
 }
 
-.mg-top-4{
+.hr-25 {
+    width: 25%;
+    margin-left: 1rem;
+}
+
+.mt-4 {
     margin-top: 4rem;
 }
 
@@ -265,9 +335,15 @@ main {
                 }
             }
         }
-
     }
 
+    .col-50 {
+        flex-basis: 100%;
+    }
+}
+
+.red {
+    color: #c03838;
 }
 
 @media (max-width:550px) {
@@ -275,6 +351,19 @@ main {
         width: 98%;
         top: auto;
         left: 1rem;
+    }
+
+    .head_banner {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 12px;
+
+        .brvt {
+            font-size: 2rem;
+            margin-left: .5rem;
+        }
     }
 
     main {
@@ -291,5 +380,17 @@ main {
                 }
             }
         }
+    }
+
+    .nowrap-550 {
+        flex-wrap: wrap;
+    }
+
+    .col-25 {
+        flex-basis: 50%;
+    }
+
+    .col-70 {
+        flex-basis: 100%;
     }
 }
