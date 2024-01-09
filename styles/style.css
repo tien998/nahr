@@ -30,25 +30,15 @@ p {
   margin: 1rem;
 }
 
-.m1 {
-  margin: 1rem;
-}
-
-.mt2 {
-  margin-top: 2rem;
-}
-
 .head_banner {
   height: 5rem;
-  background-color: rgba(241, 53, 53, 0.8156862745);
+  background-color: #f13535;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
   color: aliceblue;
   font-size: 2rem;
-  position: relative;
-  backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -256,8 +246,32 @@ main article .right p {
   margin-left: 1rem;
 }
 
-.mt-4 {
+.m1 {
+  margin: 1rem;
+}
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+.mt4 {
   margin-top: 4rem;
+}
+
+.tr-conner {
+  float: right;
+  top: -2.5rem;
+  right: 0rem;
+}
+
+footer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #e83135;
+}
+footer img {
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -291,9 +305,35 @@ main article .right p {
   .col-50 {
     flex-basis: 100%;
   }
+  .advantage {
+    margin-top: 5rem;
+  }
 }
 .red {
   color: #c03838;
+}
+
+.advantage {
+  border-left: 1px dashed rgb(41, 33, 33);
+}
+.advantage p {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.advantage h2 {
+  margin-top: 3rem;
+  display: block;
+}
+.advantage h1,
+.advantage h2,
+.advantage h3,
+.advantage h4,
+.advantage h5,
+.advantage p {
+  margin-left: 2rem;
+}
+.advantage h3 {
+  text-align: left;
 }
 
 @media (max-width: 550px) {

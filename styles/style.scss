@@ -32,25 +32,17 @@ p {
     margin: 1rem;
 }
 
-.m1 {
-    margin: 1rem;
-}
-
-.mt2 {
-    margin-top: 2rem;
-}
 
 .head_banner {
     height: 5rem;
-    background-color: #f13535d0;
+    background-color: #f13535;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
     color: aliceblue;
     font-size: 2rem;
-    position: relative;
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -289,10 +281,35 @@ main {
     margin-left: 1rem;
 }
 
-.mt-4 {
+
+.m1 {
+    margin: 1rem;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mt4 {
     margin-top: 4rem;
 }
 
+.tr-conner {
+    float: right;
+    top: -2.5rem;
+    right: 0rem;
+}
+
+footer {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #e83135;
+
+    img {
+        width: 100%;
+    }
+}
 
 @media (max-width:992px) {
     #toggle_btn {
@@ -340,10 +357,41 @@ main {
     .col-50 {
         flex-basis: 100%;
     }
+
+    .advantage {
+        margin-top: 5rem;
+    }
 }
 
 .red {
     color: #c03838;
+}
+
+.advantage {
+    border-left: 1px dashed rgb(41, 33, 33);
+
+    p {
+        font-weight: 600;
+        margin-top: 1.5rem;
+    }
+
+    h2 {
+        margin-top: 3rem;
+        display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin-left: 2rem;
+    }
+
+    h3 {
+        text-align: left;
+    }
 }
 
 @media (max-width:550px) {
